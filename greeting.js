@@ -11,14 +11,24 @@ function loadName() {
     displayName();
   }
 }
+window.addEventListener('submit', function(e){
+  e.preventDefault();
+});
 
 function displayNameAdd() {
-
+  input.classList.remove('inputText');
+  input.classList.add('inputTextDeleted');
 }
 
-function displayName() {
-
+function undisplayNameAdd() {
+  input.classList.add('inputText');
+  input.classList.remove('inputTextDeleted');
 }
+
+function submit(event) {
+  event.preventDefault();
+}
+
 
 function init() {
   loadName();
