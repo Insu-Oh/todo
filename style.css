@@ -10,3 +10,7 @@ html {
 .inputTextDeleted {
   display: none;
 }
+
+.userNameIndicator h3 {
+  display: none;
+}
